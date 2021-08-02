@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Collection from './Components/Collections';
-import Movie from './Components/Movies';
+import Collection from '../components/Collection';
+import Movie from './components/Movie';
 
 function App() {
   return (
@@ -20,13 +20,33 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Collection>
-        <Movie 
-        title = "No Country for Old Men"
-        description = "A movie about stuff"
-        year = "2007"
-        genre = "Thriller"
+      <Collection
+        title="Movies about Stuff"
+      >
+        <Movie
+          title="No Country for Old Men"
+          description="a movie about stuff"
+          year="2007"
+          genre="thriller"
         />
+        <Movie
+          title="Fargo"
+          description="a movie about stuff"
+          year="1994"
+          genre="thriller"
+        />
+        <Movie
+          title="The Big Lebowski"
+          description="a movie about stuff"
+          year="1994"
+          genre="film noir"
+        />
+        {/* <Movie
+          title="23"
+          description="a movie about stuff"
+          year="1994"
+          genre="film noir"
+        /> */}
       </Collection>
     </div>
   );

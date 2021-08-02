@@ -1,13 +1,12 @@
-import React from 'react';
-import { ProgressPlugin } from 'webpack';
+import React from "react";
 
-const Collection = ({ Children }) => {
-    return (
-        <div>
-            <p>{Children}</p>
-            test
-        </div>
-    );
+const Collection = ({ children, title }) => {
+  return (
+    <div>
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
 };
 
 export default Collection;
