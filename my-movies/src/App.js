@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import Collection from './Components/Collections';
+import Movie from './Components/Movies';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,7 +19,15 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <Collection>
+        <Movie 
+        title = "No Country for Old Men"
+        description = "A movie about stuff"
+        year = "2007"
+        genre = "Thriller"
+        />
+      </Collection>
     </div>
   );
 }
